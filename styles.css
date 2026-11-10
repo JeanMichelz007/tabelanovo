@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #080c14; /* Fundo escuro profundo estilo console */
+    background-image: radial-gradient(circle at 50% 20%, #1e1b4b 0%, #080c14 70%); /* Brilho roxo sutil ao fundo */
+    color: #f1f5f9; /* Texto claro de alta legibilidade */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 950px;
+    padding: 25px;
+}
+
+h1 {
+    color: #00f2fe; /* Azul ciano neon elétrico */
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* Efeito de brilho neon característico de jogos */
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.6), 0 0 20px rgba(0, 242, 254, 0.2);
+}
+
+table {
+    background-color: #111827; /* Fundo da tabela cinza escuro da Epic/Steam */
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 16px; /* Cantos bem arredondados e modernos */
+    overflow: hidden;
+    border: 1px solid #1f2937;
+    /* Sombra pesada para dar profundidade na tela */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    padding: 18px 22px;
+    text-align: left;
+}
+
+th {
+    background-color: #030712; /* Cabeçalho quase preto para dar destaque */
+    color: #00f2fe; /* Texto combinando com o Neon do título */
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #1f2937;
+}
+
+td {
+    border-bottom: 1px solid #1f2937;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* Remove a linha divisória do último item para não quebrar o canto arredondado */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alternância de cores das linhas (Efeito Zebrado Gamer) */
+tr:nth-child(even) {
+    background-color: #111827;
+}
+
+tr:nth-child(odd) {
+    background-color: #0f172a;
+}
+
+/* Efeito Hover interativo ao passar o mouse */
+tr:hover {
+    background-color: #1e293b; /* Destaca a linha inteira */
+    color: #ffffff;
+    cursor: pointer;
+    /* Transição suave de cor */
+    transition: all 0.15s ease-in-out;
+}
+
+/* Deixa o nome do jogo em negrito automático ao passar o mouse */
+tr:hover td:first-child {
+    color: #00f2fe;
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+}
+
+/* Estilização especial para a coluna do ano */
+.ano {
+    color: #10b981; /* Verde esmeralda para dar um contraste legal */
+    font-weight: bold;
+}
